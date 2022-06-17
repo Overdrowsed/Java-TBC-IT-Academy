@@ -1,18 +1,15 @@
-## Getting Started
+## დავალება 27.05.2022
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+წინა დავალებაში შექმნილი Rectangle კლასი გადააკეთეთ ასე:
 
-## Folder Structure
+1. კლასი მიაკუთვნეთ აუცილებლად რომელიმე პაკეტს (თუ არ გაქვთ მიკუთვნებული).
 
-The workspace contains two folders by default, where:
+2. ფართობისა და პერიმეტრის გამომთვლელ მეთოდებს შეუზღუდეთ წვდომა ისე, რომ ხედავდეს კლასის მიმდინარე პაკეტის კლასები მხოლოდ.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+3.  შედარების მეთოდი უნდა იყოს მხოლოდ კლასის ღია წევრი გარედან  გამოძახებისთვის (ინტერფეისი). შედარების მეთოდი დაწერეთ ანალოგიური  პრინციპით დასაბრუნებელ მნიშვნელობაზე (-1 ან 0 ან 1 ნაკლებობა / ტოლობა/  მეტობაზე). მეთოდს უნდა გადაეცემოდეს მხოლოდ ერთი Rectangle ტიპის  არგუმენტი და მიმდინარე this ობიექტს ადარებდს არგუმენტში გადაცემულ  Rectangle ობიექტს ფართობების შედარების ანალოგიური პრინციპით.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+4.  შექმენით სხვა პაკეტში კლასი იმავე დასახელებით Rectangle და შეუქმენით  მხოლოდ პერიმეტრის მეთოდი, რომელიც წვდომადი იქნება მხოლოდ ამ კლასის  პაკეტის კლასებში და მემკვიდრე კლასებში.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+5. ამ ახალ მეორე Rectangle  კლასს დაუწერეთ ღიად წვდომადი შედარების მეთოდი ასევე ანალოგიური პრინციპით  მხოლოდ იმ სხვაობით, რომ პარამეტრად გადაეცემოდეს ორი Rectangle ტიპის  არგუმენტი და მათ შეადარებს ერთმანეთს მეტობა-ნაკლებობაზე ანალოგიური  პრინციპით პერიმეტრების შეადრებით. ანუ ამ ახალ Rectangle-შიც კლასის  ინტერფეისი იქნება მხოლოდ შედარების მეთოდი.
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+6. შექმენით კიდევ ახალი  მესამე პაკეტი (წინა Rectangle პაკეტებისგან განსხვავებული) და მასში Main  კლასი. Main კლასის main მეთოდიდნ შექმენით ორივე Rectangle ტიპის  ობიექტები ერთდროულადაც და ცალცალკეც. გამოიძახეთ ამ ტიპის ობიექტებზე  შედარების მეთოდები.
