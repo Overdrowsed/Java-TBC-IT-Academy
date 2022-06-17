@@ -1,18 +1,21 @@
-## Getting Started
+## დავალება 01.06.2022
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+წინა დავალებებში არსებული Rectangle კლასი გადააკეთეთ ასე:
 
-## Folder Structure
+1. შექმენით  კლასი Figure, როემლსაც ექნება პერიმეტრისა და ფართობის მეთოდები,  რომლებიც დააბრუნებენ არარსებულ რაიმე მნიშვნელობებს. ასევე ჰქონდეს  სტატიკური მეთოდი sayHello, რომელიც დაბეჭდავს მისალმების ტექსტს და ეს  მეთოდი ვერ გადაიფარება შვილებში.
 
-The workspace contains two folders by default, where:
+2. კლასი Rectangle გახადეთ Figure-ის  მემკვიდრე და გადაუფარეთ პერიმატრისა და ფართობის ფორმულები. ეცადოთ ეს  მეთოდები გამოიძახოთ როგორც მშობელი კლასის ობიექტისთვის, ისე შვილის.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+3. მშობლისა და შვილის ობიექტებისთვის გამოიძახეთ instanceof სხვადასხვა ვარიანტები და დააკვირდით როგორ მუშაობს.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+4.  Figure კლასს განუსაზღვრეთ String პარამეტრიანი კონსტრუქტორი და ეს  პარამეტრი დააბეჭდინეთ. Rectangle კლასს უნდა ჰქონდეს ერთი უპარამეტრო და  მეორე ორ პარამეტრიანი (სიგრძე/სიგანე) კონსტრუქტორი. უპარამეტრომ უნდა  გამოიძახოს პარამეტრიანი სიგრძე = 3 და სიგანე = 4 მნიშვნელობებით.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+5.  Rectangle კლასს გადაუტვირთეთ პარიმეტრისა და ფართობის გამომთვლელი მეთოდი,  რომელსაც გადაეცემა სიგრძე და სიგანე და ამ არგუმენტებით დაითვლის ფართობს  და პერიმეტრს და გამოიძახეთ ეს მეთოდიც.
 
-## Dependency Management
+6. Rectangle-ში პერიმეტრისა  და ფართობის მეთოდები არ უნდა იყოს public, მაგრამ ამავე პაკეტში არსებულმა  სხვა კლასებმა შეძლონ წვდომა.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+7. დაწერეთ კლასი Square, რომელიც იქნება  Rectangle-ის მემკვიდრე, ექნება ერთი გვერდის ველი და მასაც გადაფარული  პერიმეტრისა და ფართობის გამომთვლელი მეთოდები, რომლებიც გამოიძახებენ  მშობელი კლასის შესაბამის გადაფარულ მეთოდებს და ისე დააბრუნებენ  მნიშვნელობას.
+
+8. კლასი Square უნდა იყოს Rectangle-სგან განსხვავებულ პაკეტში.
+
+9. Square კლასი დაწერეთ ისე, რომ შვილი კლასი აღარ ეყოლოს
