@@ -1,18 +1,6 @@
-## Getting Started
-
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+დავალება 15.06.2022
+წინა დავალებებში არსებული Rectangle კლასი გადააკეთეთ ასე:
+1. Figure  კლასი აღწერეთ აბსტრაქტულად და განუსაზღვრეთ აბსტრაქტული მეთოდი validete()  რომელიც ისვრის თქვენ მიერ შექმნილ Checked ტიპის ValidateException-ს.
+2.  validete მეთოდის შესაბამისი რეალიზაცია მოახდინეთ Rectangle და Triangle  კლასებში შესაბამისი წესებით. Rectangle კლასის validete-მა, თუ  მართკუთხედის ველებს არასწორი მნიშვნელობა აქვთ მინიჭებული, ისროლოს პირველ  პუნქტში აღწერილი Exception-ის შვილობილი ტიპის Exception  (RectangleValidateException), ხოლო ანალოგიურად, თუ სამკუთხედის გვერდებს  არასწორი მნიშვნელობები აქვთ მინიჭებული, მისმა validete-მა ისროლოს  TriagleValidateException, რომელიც იქნება ValidateException-ის შვილი  ასევე. ამ ორივე Exception-ს უნდა ჰქონდეს შესაბამასი მესიჯი, რომელიც  აღწერს მის დეტალებს.
+3. Rectangle კლასში შემოიღეთ მექანიზმი  (counter), რომელიც საშუალებას მოგვცემს შევინახოთ Rectangle ტიპის რამდენი  ობიექტია შექნილი და თუ ამ რიცხვმა გადააჭარბა 5-ს, მაშინ მოხდეს  მომხარებლის მიერ შექმნილი Unchecked ტიპის LimitException-ის გამოსროლა  შესაბამისი აღმწერი მესიჯით.
+4. მე-2 და მე-3 პუნქტები გამოიძახეთ და აამუშავეთ main მეთოდიდან
