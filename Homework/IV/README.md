@@ -1,18 +1,11 @@
-## Getting Started
+## დავალება 30.05.2022
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+წინა დავალებაში შექმნილი Rectangle კლასი გადააკეთეთ ასე:
 
-## Folder Structure
+1. კლასს  განუსაზღვრეთ სტატიკური ველები, რომლებიც აღწერს Rectangle კლასის ობიექტის  მაქსიმალურ სიგრძესა და სიგანეს და უზრუნველყავით, რომ არასდროს შეიქმნას  კლასი, რომელიც გადააჭარებს მაქსიმალური სიგრძის ან სიგანის ამ  მნიშვნელობებს. თუ იქნება მცდელობა გადაჭარბების, მნიშვნელობად აიღოს ეს  მაქსიმალური მნიშვნელობა.
 
-The workspace contains two folders by default, where:
+2. ახალი სტატიკური ველებისთვის  მნიშვნელობების მინიჭება უზრუნველყავით კლასის სტატიკური ინიციალიზაციის  ბლოკში და გარედან წვდომა შეზღუდეთ ამ ახალ სტატიკურ ველებზე.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+3. კლასს  განუსაზღვრეთ 3 კონსტრუქტორი: პირველი მნიშვნელობას ანიჭებდეს მხოლოდ  სიგრძეს, მეორე სიგრძესა და სიგანეს, ხოლო მესამე უპარამეტრო იყოს და რაღაც  მუდმივ მნიშვნელობას ანიჭებდეს მხოლოდ სიგანეს. სამივე შემთხვევაში დაცული  იყოს მაქსიმალურ მნიშვნელობაზე დაწესებული შეზღუდვა და სცადეთ კლასის  ობიექტების შექმნა სამივე კონსტრუქტორით.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+4. კლასს დაუწერეთ სტატიკური  მეთოდი, რომელსაც გადაეცემა ამავე კლასის ობიექტების მასივი და ამ  მასივიდან დაგვიბრუნებს მაქსიმალური ფართობის მქონე ელემენტს. main-დან  გამოიძახეთ ეს მეთოდი
