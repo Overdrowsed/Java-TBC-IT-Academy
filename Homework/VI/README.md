@@ -1,18 +1,19 @@
-## Getting Started
+## დავალება 03.06.2022
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+წინა დავალებებში არსებული Rectangle კლასი გადააკეთეთ ასე:
 
-## Folder Structure
+1. კლასს  შესაბამისი ანოტაციით გადაუფარეთ toString და equals მეთოდები. toString-მა  დააბრუნოს ადამიანისთვის გასაგები და შესაბამისი სტრიქონი, ხოლო equals-მა  ორი მართკუთხედი ჩათვალოს ტოლად თუ მათი ფართობები არის ტოლი.
 
-The workspace contains two folders by default, where:
+2.  დამატებით შექმენით კლასი სამკუთხედი, რომელშიც ასევე გადაფარული იქნება  toString და equals მეთოდები და ორი სამკუთხედი ტოლად ჩაითვლება თუ მათი  პერიმეტრები ტოლია.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+3. ორივე კლასი უნდა იყოს Figure ზოგადი კლასის შვილი.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+4.  Rectangle კლასში დაამატეთ ახალი მეთოდი calculateDiagonal რომელიც  შესაბამისი ფორმულით გამოითვლის და დააბრუნებს მართკუთხედის დიაგონალს.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+5.  Triangle კლასს დაუწერეთ მეთოდი, რომელიც დააბრუნებს 1-ს (ერთი) თუ  სამკუთხედი მახვილკუთხაა, 0-ს თუ მარკუთხაა და -1-ს (მინუს ერთს) თუ  ბლაგვკუთხაა. დამატებით ველებში შეინახეთ სამკუთხედის ორი კუთხე.
 
-## Dependency Management
+6. Triangle კლასს აღუწერეთ ასევე ერთ-ერთ გვერდზე დაშვებული სიმაღლის ველი და გადაუფარეთ ფართობის მეთოდიც.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+7.  main-ის კლასში დაწერეთ ზოგადი მეთოდი printFigure, რომელსაც გადაეცემა  Figure ტიპის ცვლადი და ბეჭდავს ამ ფიგურის ობიექტს, მის ფართობსა და  პერიმეტრს. ასევე, თუ გადაეცა სამკუთხედის ობიექტი, უნდა დამიბეჭდოს  სამკუხედი ბლაგვკუთხაა, მახვილკუთხა თუ ბლაგვკუთხა, ხოლო თუ გადაეცა  მართკუთხედის ტიპის ობიექტი, დამიბეჭდოს მართკუთხედის დიაგონალის სიგრძე.
+
+8.  main კლასში დაწერეთ ასევე ზოგადი მეთოდი compareFigure რომელსაც  გადაეცემა Figure ტიპის ორი ობიექტი და აბრუნებს ტოლია თუ არა ეს 2 ფიგურა  ჩვენ მიერ შემოღებული ლოგიკით
