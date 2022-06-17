@@ -1,18 +1,21 @@
-## Getting Started
+## დავალება 06.06.2022
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+წინა დავალებებში არსებული Rectangle კლასი გადააკეთეთ ასე:
 
-## Folder Structure
+1. დაწერეთ ინტერფეისი IFigure, რომელსაც ექნება ორი მეთოდი: printFigureData(); და printFigureAreaAndLength();
 
-The workspace contains two folders by default, where:
+2.  Figure კლასი გადააკეთეთ აბსტრაქტულად და პერიმეტრისა და ფართობის  მეთოდებიც გადააკეთეთ აბსტრაქტულად. Figure კლასმა ასევე უნდა მოახდინოს  IFigure ინტერფეისის იმპლემენტაცია.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+3. printFigureAreaAndLength  მეთოდის რეალიზაცია მოახდინეთ Figure აბსტრაქტულ კლასში და დააბეჭდინეთ  პერიმეტრისა და ფართობის მნიშნელობები.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+4. printFigureData-ს რეალიზაცია მოახდინეთ Triangle და Rectangle კლასებში და დააბეჭდინეთ შესაბამისი ფიგურის გვერდები.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+5.  main-ის კლასში განსაზღვრეთ ზოგადი მეთოდი, რომელსაც გადაეცემა IFigure  ინტერფეისის მითითება და ბეჭდავს ფიგურის მონაცმებს და ასევე ფიგურის  პერიმეტრსა და ფართობს.
 
-## Dependency Management
+6. შექმენით კიდევ ერთი ინტერფეისი  IFigureAnother, რომელსაც ექნება ერთი მეთოდი sayHelloToFigure და  დაბეჭდავს კონკრეტული ფიგურის დასახელებას და მისალმებას და მეორე მეთოდი  boolean validateFigure(), რომელიც, თუ ფიგურა სწორი მნიშნელობებით არის  შექმნილი, დააბრუნებს true-ს ხოლო თუ არასწორი - false-ს. მაგალითად,  ფიგურის გვერდის სიგრძე არ უნდა იყოს 0 ან უარყოფითი და კიდევ დამატებითი  საჭირო ვალიდაციები დამოკიდებული კონკრეტულ ფიგურაზე.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+7. Figure კლასს  გააკეთებინეთ ასევე IFigureAnother-ს იმპლემენტაცია და შესაბამისი მეთოდების  რეალიზება სამკუთხედისა და მართკუთხედის კლასებში.
+
+8. main-ის კლასში  განსაზღვრეთ ზოგადი მეთოდი, რომელსაც გადაეცემა IFigureAnother ინტერფეისის  მითითება, ახდენს ფიგურის ვალიდაციას და თუ ვალიდურია მხოლოდ იმ  შემთხვევაში ბეჭდავს შესაბამის მისალმების ტექსტს. თუ არაა ვალიდური,  დაბეჭდოს Invalid Figure.
+
+9. main-ის კლასში არსებული მეთოდები ამუშავეთ როგორც სამკუთხედისთვის, ისე მართკუთხედისთვის
