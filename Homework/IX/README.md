@@ -1,18 +1,15 @@
-## Getting Started
+## დავალება 13.06.2022
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+შექმენით მარტივი Text to Speech, Speech to Text ან ორივეს შემცველი პროგრამა (ვირტუალური ასისტენტის მსგავსი). ის უნდა შეიცავდეს ყველა სახის ციკლსა და მართვის ოპერატორს. გამოიყენეთ Java-ს ჩაშენებული String მეთოდები.
 
-## Folder Structure
+მაგალითად, რა ფუნქიები შეიძლება ჰქონდეს პროგრამას:
 
-The workspace contains two folders by default, where:
+1. გაგონილი ტექსტი დაბეჭდოს, ან დაწერილი ტექსტი გააჟღეროს.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+2. ზოგიერთ კითხვაზე შეეძლოს პასუხის გაცემა.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+ხმასთან დაკავშირებული ფუნქიონალისთვის დააიმპორტეთ რომელიმე ბიბლიოთეკა maven-ის (Ant, ან Gradle-იც შეიძლება) გამოყენებით.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+შეხედულებისამებრ დაამსგავსეთ პროგრამა ხელოვნურ ინტელექტს, რა თქმა უნდა, პრიმიტიულ დონეზე.
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+თუ ხმის ფუნქციონალი არ გამოგივათ, მოცემული პროგრამა შექმენით ტექსტურად
