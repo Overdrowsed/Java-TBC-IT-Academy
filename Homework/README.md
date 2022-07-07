@@ -1,5 +1,5 @@
 ## I - Introduction
-I - Introduction, Basics, Compiling & running Java files
+I - Introduction, basics, compiling & running Java files
 
 ## II-XV - Core Java
 II - OOP Introduction
