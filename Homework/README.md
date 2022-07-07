@@ -1,5 +1,5 @@
 ## I - Introduction
-I - Introduction, basics, compiling & running Java files
+I - Introduction, Basics, Compiling & Running Java Files
 
 ## II-XV - Core Java
 II - OOP Introduction
@@ -31,4 +31,4 @@ XIV - Scanners & Console
 XV - Regex, String, Properties
 
 ## XVI -... Advanced Java
-XVI - Generics (containers)
+XVI - Generics (Containers)
