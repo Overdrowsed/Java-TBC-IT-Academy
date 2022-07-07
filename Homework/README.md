@@ -30,5 +30,5 @@ XIV - Scanners & Console
 
 XV - Regex, String, Properties
 
-## XVI - ... Advanced Java
+## XVI - ... - Advanced Java
 XVI - Generics (Containers)
