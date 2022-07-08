@@ -31,4 +31,6 @@ XIV - Scanners & Console
 XV - Regex, String, Properties
 
 ## XVI-... - Advanced Java
-XVI - Generics (Containers)
+XVI - Generics Pt1
+
+XVII - Generics Pt2
