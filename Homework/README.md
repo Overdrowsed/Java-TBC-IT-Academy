@@ -4,7 +4,7 @@ I - Introduction, Basics, Compiling & Running Java Files
 ## II-XV - Core Java
 II - OOP Introduction
 
-III- Encapsulation
+III - Encapsulation
 
 IV - Static Members & Initialization
 
