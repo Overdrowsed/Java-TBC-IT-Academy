@@ -1,40 +1,40 @@
-## I — Introduction
-I — Introduction, Basics, Compiling & Running Java Files
+## I – Introduction
+I – Introduction, Basics, Compiling & Running Java Files
 
-## II—XV — Core Java
-II — OOP Introduction
+## II–XV – Core Java
+II – OOP Introduction
 
-III — Encapsulation
+III – Encapsulation
 
-IV — Static Members & Initialization
+IV – Static Members & Initialization
 
-V — Method Overloading / Overriding
+V – Method Overloading / Overriding
 
-VI — Method Overloading / Overriding Pt2
+VI – Method Overloading / Overriding Pt2
 
-VII — Interfaces & Abstract Classes
+VII – Interfaces & Abstract Classes
 
-VIII — Containers
+VIII – Containers
 
-IX — Operators, Cycles & Revision
+IX – Operators, Cycles & Revision
 
-X — Exceptions
+X – Exceptions
 
-XI — Try/Catch
+XI – Try/Catch
 
-XII — I/O System
+XII – I/O System
 
-XIII — I/O System Pt2
+XIII – I/O System Pt2
 
-XIV — Scanners & Console
+XIV – Scanners & Console
 
-XV — Regex, String, Properties
+XV – Regex, String, Properties
 
-## XVI—... — Advanced Java
-XVI — Generics Pt1
+## XVI–... – Advanced Java
+XVI – Generics Pt1
 
-XVII — Generics Pt2
+XVII – Generics Pt2
 
-XVIII — Inner Classes
+XVIII – Inner Classes
 
-XIX — Runtime—Type Information
+XIX – Runtime–Type Information
