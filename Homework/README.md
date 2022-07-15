@@ -34,3 +34,5 @@ XV - Regex, String, Properties
 XVI - Generics Pt1
 
 XVII - Generics Pt2
+
+XVIII - Inner Classes
