@@ -38,3 +38,5 @@ XVII – Generics Pt2
 XVIII – Inner Classes
 
 XIX – Runtime-Type Information
+
+XX - Lambda Streams
