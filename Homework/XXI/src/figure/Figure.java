@@ -13,21 +13,21 @@ public class Figure implements Comparable<Figure>{
      * 
      * @return perimeter of the shape
      */
-    public abstract double getLength() { return -1;}
+    public double getLength() { return -1;}
 
     /**
      * A getter method for the area of the shape.
      * 
      * @return area of the shape
      */
-    public abstract double getArea(){ return -1;}
+    public double getArea(){ return -1;}
 
     /**
      * Validates that the shape has a valid configuration.
      * 
      * @return {@code true} if the shape has a valid configuration, {@code false} otherwise
      */
-    public abstract boolean validate(){ return false;}
+    public boolean validate(){ return false;}
 
     @Override
     public int compareTo(Figure other) {
