@@ -27,7 +27,7 @@ public class Figure implements Comparable<Figure>{
      * 
      * @return {@code true} if the shape has a valid configuration, {@code false} otherwise
      */
-    public abstract boolean validate(){ return -1;}
+    public abstract boolean validate(){ return false;}
 
     @Override
     public int compareTo(Figure other) {
