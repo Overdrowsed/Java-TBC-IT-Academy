@@ -53,7 +53,7 @@ public class ObjectToCustomStringConverter {
 
     private static void verifySerializable(Object input){
         if(!input.getClass().isAnnotationPresent(CustomStringSerializable.class))
-            throw new CustomStringSerializationException("Given object cannot be serialized");
+        throw new CustomStringSerializationException("Arguement needs to have CustomStringSerializable annotation to be converted");
     }
 
     private static boolean isSerializableField(Object object, Field objectField){
@@ -83,7 +83,7 @@ public class ObjectToCustomStringConverter {
             if(method.isAnnotationPresent(Validator.class)){
                 try{
                     if((boolean)method.invoke(object) == false)
-                        throw new CustomStringSerializationException("Object is invalid and cannot be serialized to custom string");
+                        throw new CustomStringSerializationException("Arguement is invalid and cannot be serialized to custom string");
                 }
                 catch(IllegalAccessException | InvocationTargetException exception){
                     System.out.println(exception);
