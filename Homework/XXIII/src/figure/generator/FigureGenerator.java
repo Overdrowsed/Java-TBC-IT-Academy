@@ -5,16 +5,16 @@ import java.io.IOException;
 
 public class FigureGenerator extends Thread{
     public void run(){
-        Thread cirlceThread = new Thread(() -> generateCircles());
+        Thread circleThread = new Thread(() -> generateCircles());
         Thread rectangleThread = new Thread (() -> generateRectangles());
         Thread triangleThread = new Thread (() -> generateTriangles());
     
-        cirlceThread.start();
+        circleThread.start();
         rectangleThread.start();
         triangleThread.start();
     
         try{
-            cirlceThread.join();
+            circleThread.join();
             rectangleThread.join();
             triangleThread.join();
         }
