@@ -49,7 +49,7 @@ public class FigureReaderWriter extends Thread {
 
                 if(circle.validate()){
                     if(circleReaderDelimiter.hasNext())
-                        circleWriter.write(radius + "-");
+                        circleWriter.write(radius + "#");
                     else
                         circleWriter.write(String.valueOf(radius));
                 }
