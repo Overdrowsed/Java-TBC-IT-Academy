@@ -16,7 +16,9 @@ public class App {
 
         for(var entry : FigureReader.readFigures()){
             try {
-                System.out.println(entry.get().stream().max(Comparator.naturalOrder()).get());
+                if(entry.get().stream().max)Comparator.naturalOrder()).isPresent()) {
+                    System.out.println(entry.get().stream().max(Comparator.naturalOrder()).get());
+                }
             } 
             catch (ExecutionException exception) {
                 System.out.println(exception);
