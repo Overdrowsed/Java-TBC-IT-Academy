@@ -50,3 +50,5 @@ XXIII – Threads
 XXIV – Concurrency
 
 XXV – Json
+
+XXV – Serialization
