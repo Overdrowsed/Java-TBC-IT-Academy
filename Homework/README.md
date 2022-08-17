@@ -51,4 +51,4 @@ XXIV – Concurrency
 
 XXV – Json
 
-XXV – Serialization
+XXVI – Serialization
