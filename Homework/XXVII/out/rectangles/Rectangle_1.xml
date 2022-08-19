@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Rectangle>
+    <className>figure.Rectangle</className>
+    <width>4</width>
+    <height>3</height>
+</Rectangle>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Triangle>
+    <className>figure.Triangle</className>
+    <sideA>5</sideA>
+    <sideB>6</sideB>
+    <sideC>7</sideC>
+</Triangle>
