@@ -21,7 +21,9 @@ public class App {
             System.out.println(TriangleUtil.findFirstRightTriangle(triangles));
     
             Triangle[] nonRightTrianglesArray = List.copyOf(nonRightTriangles).toArray(Triangle[]::new);
-    
+            
+            Files.deleteIfExists(Path.of("out/triangles_out.dat"));
+            
             Files.writeString(
                 Files.createFile(Path.of("out/triangles_out.dat")),
                 Arrays.toString(nonRightTrianglesArray),
