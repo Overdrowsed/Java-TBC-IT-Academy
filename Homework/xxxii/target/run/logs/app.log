@@ -1,0 +1,6 @@
+2022-09-12 14:38:37.0896 INFO 1 homework.main.App de26fecf-0641-4ce0-8c7d-5b499afbc333 methodName=main {{{ starting circle serialization to out/xml/circles_output.xml }}} 
+2022-09-12 14:38:38.0086 INFO 1 homework.main.App de26fecf-0641-4ce0-8c7d-5b499afbc333 methodName=main {{{ successfully serialized circles to out/xml/circles_output.xml }}} 
+2022-09-12 14:38:38.0086 INFO 1 homework.main.App de26fecf-0641-4ce0-8c7d-5b499afbc333 methodName=main {{{ starting rectangle serialization to out/xml/rectangles_output.xml }}} 
+2022-09-12 14:38:38.0111 INFO 1 homework.main.App de26fecf-0641-4ce0-8c7d-5b499afbc333 methodName=main {{{ successfully serialized rectangles to out/xml/rectangles_output.xml }}} 
+2022-09-12 14:38:38.0111 INFO 1 homework.main.App de26fecf-0641-4ce0-8c7d-5b499afbc333 methodName=main {{{ starting triangle xml modification from data/triangles_input.xml }}} 
+2022-09-12 14:38:38.0325 INFO 1 homework.main.App de26fecf-0641-4ce0-8c7d-5b499afbc333 methodName=main {{{ successfully modified triangles from data/triangles_input.xml, saved to out/xml/triangles_input.xml and generated schema at data/triangles.xsd }}} 

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info">
+    <Properties>
+        <Property name="logPath">logs</Property>
+        <Property name="logPattern">
+            %date{yyyy-MM-dd HH:mm:ss.SSSS} %level %threadId %c %X{uuid} methodName=%X{method} {{{ %message }}} %n
+        </Property>
+    </Properties>
+
+    <Appenders>
+        <RollingFile name="infoAppender" fileName="${logPath}/app.log" 
+        filePattern="${logPath}/app.log.%date{yyyy-MM-dd}" append="false">
+            <ThresholdFilter level="INFO"/>
+            <PatternLayout pattern="${logPattern}"/>
+            <TimeBasedTriggeringPolicy/>
+        </RollingFile>
+
+        <RollingFile name="errorAppender" fileName="${logPath}/app_error.log" 
+        filePattern="${logPath}/app_error.log.%date{yyyy-MM-dd}" append="false">
+            <ThresholdFilter level="ERROR"/>
+            <PatternLayout pattern="${logPattern}"/>
+            <TimeBasedTriggeringPolicy/>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Logger name="main.App" level="debug" additivity="false">
+            <AppenderRef ref="infoAppender"/>
+            <AppenderRef ref="errorAppender"/>
+        </Logger>
+    </Loggers>
+</Configuration>
