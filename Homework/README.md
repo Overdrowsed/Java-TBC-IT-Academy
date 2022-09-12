@@ -60,3 +60,7 @@ XXVIII – Xpath
 XXIX – Jaxb
 
 XXX – Logging
+
+XXXI – Java 10 & 11
+
+XXXII – Maven
