@@ -65,6 +65,6 @@ XXXI – Java 10 & 11
 
 XXXII – Maven
 
-XXXII – Tomcat Json
+XXXIII – Tomcat Json
 
-XXXII – Tomcat Xml
+XXXIV – Tomcat Xml
