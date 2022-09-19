@@ -64,3 +64,7 @@ XXX – Logging
 XXXI – Java 10 & 11
 
 XXXII – Maven
+
+XXXII – Tomcat Json
+
+XXXII – Tomcat Xml
