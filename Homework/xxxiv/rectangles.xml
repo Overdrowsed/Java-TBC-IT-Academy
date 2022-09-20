@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rectangles>
+    <rectangle>
+        <width>16</width>
+        <height>9</height>
+    </rectangle>
+    <rectangle>
+        <width>4</width>
+        <height>3</height>
+    </rectangle>
+    <rectangle>
+        <width>5</width>
+        <height>4</height>
+    </rectangle>
+    <rectangle>
+        <width>6</width>
+        <height>3</height>
+    </rectangle>
+    <rectangle>
+        <width>7</width>
+        <height>4</height>
+    </rectangle>
+    <rectangle>
+        <width>24</width>
+        <height>7</height>
+    </rectangle>
+    <rectangle>
+        <width>13</width>
+        <height>10</height>
+    </rectangle>
+    <rectangle>
+        <width>11</width>
+        <height>9</height>
+    </rectangle>
+    <rectangle>
+        <width>20</width>
+        <height>10</height>
+    </rectangle>
+    <rectangle>
+        <width>6</width>
+        <height>2</height>
+    </rectangle>
+</rectangles>
