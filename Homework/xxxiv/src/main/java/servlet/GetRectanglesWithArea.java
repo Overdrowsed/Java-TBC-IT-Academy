@@ -79,7 +79,6 @@ public class GetRectanglesWithArea extends HttpServlet {
         
         try{
             rectangles = XmlUtil.xmlToRectangles(rectangleDatabasePath);
-            logger.info(rectangleDatabasePath);
         }
         catch (JAXBException exception){
             response.sendError(500);
