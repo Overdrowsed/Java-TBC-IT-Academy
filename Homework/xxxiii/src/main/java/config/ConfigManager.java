@@ -16,7 +16,7 @@ public class ConfigManager {
     private static Logger logger = LogManager.getLogger();
 
 
-    private static final String CONFIG_FILE = "config.properties";
+    private static final String CONFIG_FILE = "triangle_servlet_config.properties";
 
     private volatile static ConfigManager singleton = null;
 
