@@ -8,24 +8,44 @@
     </Properties>
 
     <Appenders>
-        <RollingFile name="infoAppender" fileName="${logPath}/app.log" 
-        filePattern="${logPath}/app.log.%date{yyyy-MM-dd}">
+        <RollingFile name="triangle_servlet_info_appender" fileName="${logPath}/triangle_servlet/triangle_servlet.log" 
+        filePattern="${logPath}/triangle_servlet/triangle_servlet.log.%date{yyyy-MM-dd}">
             <ThresholdFilter level="INFO"/>
             <PatternLayout pattern="${logPattern}"/>
             <TimeBasedTriggeringPolicy/>
         </RollingFile>
 
-        <RollingFile name="errorAppender" fileName="${logPath}/app_error.log" 
-        filePattern="${logPath}/app_error.log.%date{yyyy-MM-dd}">
+        <RollingFile name="triangle_servlet_error_appender" fileName="${logPath}/triangle_servlet/triangle_servlet_error.log" 
+        filePattern="${logPath}/triangle_servlet/triangle_servlet_error.log.%date{yyyy-MM-dd}">
+            <ThresholdFilter level="ERROR"/>
+            <PatternLayout pattern="${logPattern}"/>
+            <TimeBasedTriggeringPolicy/>
+        </RollingFile>
+
+
+        <RollingFile name="rectangle_servlet_info_appender" fileName="${logPath}/rectangle_servlet/rectangle_servlet.log" 
+        filePattern="${logPath}/rectangle_servlet/rectangle_servlet.log.%date{yyyy-MM-dd}">
+            <ThresholdFilter level="INFO"/>
+            <PatternLayout pattern="${logPattern}"/>
+            <TimeBasedTriggeringPolicy/>
+        </RollingFile>
+
+        <RollingFile name="rectangle_servlet_error_appender" fileName="${logPath}/rectangle_servlet/rectangle_servlet_error.log" 
+        filePattern="${logPath}/rectangle_servlet/rectangle_servlet_error.log.%date{yyyy-MM-dd}">
             <ThresholdFilter level="ERROR"/>
             <PatternLayout pattern="${logPattern}"/>
             <TimeBasedTriggeringPolicy/>
         </RollingFile>
     </Appenders>
     <Loggers>
-        <Root level="debug">
-            <AppenderRef ref="infoAppender"/>
-            <AppenderRef ref="errorAppender"/>
-        </Root>
+        <Logger name="triangle_servlet" level="info" additivity="false">
+            <AppenderRef ref="triangle_servlet_info_appender"/>
+            <AppenderRef ref="triangle_servlet_error_appender"/>
+        </Logger>
+
+        <Logger name="rectangle_servlet" level="info" additivity="false">
+            <AppenderRef ref="rectangle_servlet_info_appender"/>
+            <AppenderRef ref="rectangle_servlet_error_appender"/>
+        </Logger>
     </Loggers>
 </Configuration>
