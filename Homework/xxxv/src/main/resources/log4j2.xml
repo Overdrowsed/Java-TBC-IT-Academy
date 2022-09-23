@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info">
+    <Properties>
+        <Property name="logPath">logs/app</Property>
+        <Property name="logPattern">
+            %date{yyyy-MM-dd HH:mm:ss.SSSS} %level %threadId %c {{{ %message }}} %n
+        </Property>
+    </Properties>
+
+    <Appenders>
+        <RollingFile name="triangle_servlet_client_info_appender" fileName="${logPath}/triangle_servlet_client/triangle_servlet_client.log" 
+        filePattern="${logPath}/triangle_servlet_client/triangle_servlet_client.log.%date{yyyy-MM-dd}"
+        append="false">
+            <ThresholdFilter level="INFO"/>
+            <PatternLayout pattern="${logPattern}"/>
+            <TimeBasedTriggeringPolicy/>
+        </RollingFile>
+
+        <RollingFile name="triangle_servlet_client_error_appender" fileName="${logPath}/triangle_servlet_client/triangle_servlet_client_error.log" 
+        filePattern="${logPath}/triangle_servlet_client/triangle_servlet_client_error.log.%date{yyyy-MM-dd}">
+            <ThresholdFilter level="ERROR"/>
+            <PatternLayout pattern="${logPattern}"/>
+            <TimeBasedTriggeringPolicy/>
+        </RollingFile>
+
+
+        <RollingFile name="rectangle_servlet_client_info_appender" fileName="${logPath}/rectangle_servlet_client/rectangle_servlet_client.log" 
+        filePattern="${logPath}/rectangle_servlet_client/rectangle_servlet_client.log.%date{yyyy-MM-dd}"
+        append="false">
+            <ThresholdFilter level="INFO"/>
+            <PatternLayout pattern="${logPattern}"/>
+            <TimeBasedTriggeringPolicy/>
+        </RollingFile>
+
+        <RollingFile name="rectangle_servlet_client_error_appender" fileName="${logPath}/rectangle_servlet_client/rectangle_servlet_client_error.log" 
+        filePattern="${logPath}/rectangle_servlet_client/rectangle_servlet_client_error.log.%date{yyyy-MM-dd}">
+            <ThresholdFilter level="ERROR"/>
+            <PatternLayout pattern="${logPattern}"/>
+            <TimeBasedTriggeringPolicy/>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Logger name="triangle_servlet_client" level="info" additivity="false">
+            <AppenderRef ref="triangle_servlet_client_info_appender"/>
+            <AppenderRef ref="triangle_servlet_client_error_appender"/>
+        </Logger>
+        <Logger name="rectangle_servlet_client" level="info" additivity="false">
+            <AppenderRef ref="rectangle_servlet_client_info_appender"/>
+            <AppenderRef ref="rectangle_servlet_client_error_appender"/>
+        </Logger>
+    </Loggers>
+</Configuration>

@@ -1,0 +1,6 @@
+2022-09-23 11:14:24.0531 ERROR 1 rectangle_servlet_client {{{ Server returned HTTP response code: 400 for URL: http://localhost:8080/xxxiv/get_rectangles_with_area?s=-1 }}} 
+2022-09-23 11:39:11.0304 ERROR 1 rectangle_servlet_client {{{ Server returned HTTP response code: 400 for URL: http://localhost:8080/xxxiv/get_rectangles_with_area?s=-1 }}} 
+2022-09-23 11:39:11.0620 ERROR 1 rectangle_servlet_client {{{ Post request returned error code 400 }}} 
+2022-09-23 11:39:43.0729 ERROR 1 rectangle_servlet_client {{{ Server returned HTTP response code: 400 for URL: http://localhost:8080/xxxiv/get_rectangles_with_area?s=-1 }}} 
+2022-09-23 11:49:04.0642 ERROR 1 rectangle_servlet_client {{{ Server returned HTTP response code: 400 for URL: http://localhost:8080/xxxiv/get_rectangles_with_area?s=-1 }}} 
+2022-09-23 13:17:07.0672 ERROR 1 rectangle_servlet_client {{{ Server returned HTTP response code: 400 for URL: http://localhost:8080/xxxiv/get_rectangles_with_area?s=-1 }}} 

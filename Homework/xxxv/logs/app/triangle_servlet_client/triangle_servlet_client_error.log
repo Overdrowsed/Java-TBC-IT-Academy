@@ -1,0 +1,5 @@
+2022-09-23 11:12:11.0069 ERROR 1 triangle_servlet_client {{{ httpGetPostAsync method threw exception with message java.net.http.HttpTimeoutException: request timed out }}} 
+2022-09-23 11:12:13.0725 ERROR 1 triangle_servlet_client {{{ Get request returned status code 400 }}} 
+2022-09-23 11:12:35.0302 ERROR 1 triangle_servlet_client {{{ Get request returned status code 400 }}} 
+2022-09-23 11:42:09.0987 ERROR 1 triangle_servlet_client {{{ Get request returned status code 400 }}} 
+2022-09-23 13:16:22.0228 ERROR 1 triangle_servlet_client {{{ Get request returned status code 400 }}} 

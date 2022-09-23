@@ -1,0 +1,6 @@
+2022-09-23 13:17:06.0478 INFO 1 rectangle_servlet_client {{{ Establishing connection to get request... }}} 
+2022-09-23 13:17:07.0651 INFO 1 rectangle_servlet_client {{{ Get request responded with status code 200 and body <?xml version="1.0" encoding="UTF-8" standalone="yes"?><rectangles><rectangle><width>4</width><height>3</height></rectangle><rectangle><width>6</width><height>2</height></rectangle></rectangles> }}} 
+2022-09-23 13:17:07.0652 INFO 1 rectangle_servlet_client {{{ Establishing connection to get request... }}} 
+2022-09-23 13:17:07.0672 ERROR 1 rectangle_servlet_client {{{ Server returned HTTP response code: 400 for URL: http://localhost:8080/xxxiv/get_rectangles_with_area?s=-1 }}} 
+2022-09-23 13:17:07.0673 INFO 1 rectangle_servlet_client {{{ Establishing connection to post request... }}} 
+2022-09-23 13:17:07.0884 INFO 1 rectangle_servlet_client {{{ Post request responded with status code 200 }}} 
