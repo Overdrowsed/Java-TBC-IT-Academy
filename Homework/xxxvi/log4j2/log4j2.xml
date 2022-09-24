@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info">
+    <Properties>
+        <Property name="logPath">${sys:catalina.home}/logs/app</Property>
+        <Property name="logPattern">
+            %date{yyyy-MM-dd HH:mm:ss.SSSS} %level %threadId %c {{{ %message }}} %n
+        </Property>
+    </Properties>
+
+    <Appenders>
+        <RollingFile name="triangle_servlet_info_appender" fileName="${logPath}/triangle_servlet/triangle_servlet.log" 
+        filePattern="${logPath}/triangle_servlet/triangle_servlet.log.%date{yyyy-MM-dd}">
+            <ThresholdFilter level="INFO"/>
+            <PatternLayout pattern="${logPattern}"/>
+            <TimeBasedTriggeringPolicy/>
+        </RollingFile>
+
+        <RollingFile name="triangle_servlet_error_appender" fileName="${logPath}/triangle_servlet/triangle_servlet_error.log" 
+        filePattern="${logPath}/triangle_servlet/triangle_servlet_error.log.%date{yyyy-MM-dd}">
+            <ThresholdFilter level="ERROR"/>
+            <PatternLayout pattern="${logPattern}"/>
+            <TimeBasedTriggeringPolicy/>
+        </RollingFile>
+
+
+        <RollingFile name="triangle_job_info_appender" fileName="${logPath}/triangle_job/triangle_job.log" 
+        filePattern="${logPath}/triangle_job/triangle_job.log.%date{yyyy-MM-dd}">
+            <ThresholdFilter level="INFO"/>
+            <PatternLayout pattern="${logPattern}"/>
+            <TimeBasedTriggeringPolicy/>
+        </RollingFile>
+
+        <RollingFile name="triangle_job_error_appender" fileName="${logPath}/triangle_job/triangle_job_error.log" 
+        filePattern="${logPath}/triangle_job/triangle_job_error.log.%date{yyyy-MM-dd}">
+            <ThresholdFilter level="ERROR"/>
+            <PatternLayout pattern="${logPattern}"/>
+            <TimeBasedTriggeringPolicy/>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Logger name="triangle_servlet" level="info" additivity="false">
+            <AppenderRef ref="triangle_servlet_info_appender"/>
+            <AppenderRef ref="triangle_servlet_error_appender"/>
+        </Logger>
+
+        <Logger name="triangle_job" level="info" additivity="false">
+            <AppenderRef ref="triangle_job_info_appender"/>
+            <AppenderRef ref="triangle_job_error_appender"/>
+        </Logger>
+    </Loggers>
+</Configuration>
