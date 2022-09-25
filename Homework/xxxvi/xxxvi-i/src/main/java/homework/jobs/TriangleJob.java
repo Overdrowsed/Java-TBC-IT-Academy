@@ -32,7 +32,7 @@ public class TriangleJob implements Job{
     
             int a = (int)(Math.random() * 29 + 1);
             int b = (int)(Math.random() * 29 + 1);
-            int c = (int)(Math.random() * (Math.max(a, b) - Math.min(a, b)) + Math.min(a, b));
+            int c = (int)(Math.random() * (Math.max(a, b) - Math.min(a, b))) + Math.min(a, b);
     
             triangles.add(new Triangle(a, b, c));
             
