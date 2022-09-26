@@ -1,0 +1,9 @@
+polygon\Rectangle.class
+handler\RectangleDatabaseHandler.class
+servlet\GetMaxTriangle.class
+polygon\Triangle.class
+jaxb\Triangles.class
+util\XmlUtil.class
+servlet\GetRectangles.class
+util\JsonUtil.class
+handler\TriangleDatabaseHandler.class
