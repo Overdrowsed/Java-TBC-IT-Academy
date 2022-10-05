@@ -1,0 +1,8 @@
+template\PersonWebServiceTemplate.class
+manager\data\ConfigData.class
+service\PersonWebService.class
+util\XmlUtil.class
+manager\ConfigManager.class
+beans\Persons.class
+manager\AuthValidator.class
+beans\Person.class
