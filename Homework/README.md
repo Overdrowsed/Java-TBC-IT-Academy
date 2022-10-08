@@ -74,3 +74,5 @@ XXXV – Http Client
 XXXVI – Quartz
 
 XXXVII – Wildfly
+
+XXXVIII – Rest
