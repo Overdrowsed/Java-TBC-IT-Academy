@@ -100,7 +100,7 @@ public class PersonWebService implements PersonWebServiceTemplate{
     }
 
     @Override
-    public Response addPerson(@Valid  Person newPerson, String username, String password, HttpServletRequest request) {
+    public Response addPerson(Person newPerson, String username, String password, HttpServletRequest request) {
         ThreadContext.put("uuid", UUID.randomUUID().toString());
         ThreadContext.put("method", "addPerson");
         
