@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persons>
+    <person id="1">
+        <first-name>Peter</first-name>
+        <last-name>Parker</last-name>
+        <age>24</age>
+    </person>
+    <person id="2">
+        <first-name>Miles</first-name>
+        <last-name>Morales</last-name>
+        <age>17</age>
+    </person>
+    <person id="3">
+        <first-name>Martin</first-name>
+        <last-name>Li</last-name>
+        <age>40</age>
+    </person>
+    <person id="4">
+        <first-name>Wilson</first-name>
+        <last-name>Fisk</last-name>
+        <age>48</age>
+    </person>
+    <person id="5">
+        <first-name>Otto</first-name>
+        <last-name>Octavius</last-name>
+        <age>63</age>
+    </person>
+    <person id="6">
+        <first-name>Nathan</first-name>
+        <last-name>Drake</last-name>
+        <age>38</age>
+    </person>
+    <person id="7">
+        <first-name>Mae</first-name>
+        <last-name>Borowski</last-name>
+        <age>20</age>
+    </person>
+    <person id="8">
+        <first-name>Edith</first-name>
+        <last-name>Finch</last-name>
+        <age>17</age>
+    </person>
+    <person id="9">
+        <first-name>Leon</first-name>
+        <last-name>Kennedy</last-name>
+        <age>21</age>
+    </person>
+    <person id="10">
+        <first-name>Hank</first-name>
+        <last-name>Anderson</last-name>
+        <age>53</age>
+    </person>
+</persons>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info">
+    <Properties>
+        <Property name="logPath">${sys:catalina.home}/logs/person_webservice/</Property>
+        <Property name="logPattern">
+            %date{yyyy-MM-dd HH:mm:ss.SSSS} %level %threadId %logger %X{uuid} methodName=%X{method} {{{ %message }}}%n
+        </Property>
+    </Properties>
+
+    <Appenders>
+        <RollingFile name="person_webservice_appender_trace" fileName="${logPath}/person_webservice_trace.log" 
+        filePattern="${logPath}/person_webservice_trace.log.%date{yyyy-MM-dd}">
+            <ThresholdFilter level="trace"/>
+            <PatternLayout pattern="${logPattern}"/>
+            <TimeBasedTriggeringPolicy/>
+        </RollingFile>
+
+        <RollingFile name="person_webservice_appender_info" fileName="${logPath}/person_webservice_info.log" 
+        filePattern="${logPath}/person_webservice_info.log.%date{yyyy-MM-dd}">
+            <ThresholdFilter level="info"/>
+            <PatternLayout pattern="${logPattern}"/>
+            <TimeBasedTriggeringPolicy/>
+        </RollingFile>
+
+        <RollingFile name="person_webservice_appender_error" fileName="${logPath}/person_webservice_error.log" 
+        filePattern="${logPath}/person_webservice_error.log.%date{yyyy-MM-dd}">
+            <ThresholdFilter level="error"/>
+            <PatternLayout pattern="${logPattern}"/>
+            <TimeBasedTriggeringPolicy/>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Logger name="person_webservice" level="trace" additivity="false">
+            <AppenderRef ref="person_webservice_appender_trace"/>
+            <AppenderRef ref="person_webservice_appender_info"/>
+            <AppenderRef ref="person_webservice_appender_error"/>
+        </Logger>
+    </Loggers>
+</Configuration>
