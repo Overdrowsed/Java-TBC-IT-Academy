@@ -1,0 +1,326 @@
+2022-10-17 22:16:49.0098 TRACE 1 person_wrapped_client 26f2b299-fc25-4163-a367-ad1f0a0c2da6 methodName=handleMessage {{{ SOAP request: 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body>
+    <ns2:GetPersonRequest xmlns:ns2="http://template/">
+      <auth>
+        <username>user</username>
+        <password>pass</password>
+      </auth>
+      <id>1</id>
+    </ns2:GetPersonRequest>
+  </S:Body>
+</S:Envelope>
+ }}}
+2022-10-17 22:16:49.0607 TRACE 1 person_wrapped_client 7d45f362-c3db-4964-ad3c-89129e4170cf methodName=handleMessage {{{ SOAP response: 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body>
+    <ns2:GetPersonResponse xmlns:ns2="http://template/">
+      <person id="1">
+        <first-name>Peter</first-name>
+        <last-name>Parker</last-name>
+        <age>24</age>
+      </person>
+    </ns2:GetPersonResponse>
+  </S:Body>
+</S:Envelope>
+ }}}
+2022-10-17 22:16:49.0633 TRACE 1 person_wrapped_client 4492d1de-be64-4b45-9590-b70e71bf5776 methodName=handleMessage {{{ SOAP request: 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body>
+    <ns2:GetPersonRequest xmlns:ns2="http://template/">
+      <auth>
+        <username>user</username>
+        <password>pass</password>
+      </auth>
+      <id>0</id>
+    </ns2:GetPersonRequest>
+  </S:Body>
+</S:Envelope>
+ }}}
+2022-10-17 22:16:49.0735 TRACE 1 person_wrapped_client e4d1ff63-bd43-455e-9573-8b6448a3c75b methodName=handleMessage {{{ SOAP response: 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body>
+    <S:Fault xmlns:ns3="http://www.w3.org/2003/05/soap-envelope">
+      <faultcode>S:Server</faultcode>
+      <faultstring>No person found with id 0</faultstring>
+      <detail>
+        <ns2:PersonNotFound xmlns:ns2="http://template/">
+          <message>No person found with id 0</message>
+        </ns2:PersonNotFound>
+      </detail>
+    </S:Fault>
+  </S:Body>
+</S:Envelope>
+ }}}
+2022-10-17 22:16:49.0793 ERROR 1 person_wrapped_client e4d1ff63-bd43-455e-9573-8b6448a3c75b methodName=getPerson {{{ No person found with id 0 }}}
+2022-10-17 22:16:49.0801 TRACE 1 person_wrapped_client c7646afe-cd7a-4965-9300-690d7e74aa2e methodName=handleMessage {{{ SOAP request: 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body>
+    <ns2:AddPersonRequest xmlns:ns2="http://template/">
+      <auth>
+        <username>user</username>
+        <password>pass</password>
+      </auth>
+      <person id="11">
+        <first-name>John</first-name>
+        <last-name>Doe</last-name>
+        <age>24</age>
+      </person>
+    </ns2:AddPersonRequest>
+  </S:Body>
+</S:Envelope>
+ }}}
+2022-10-17 22:16:49.0881 TRACE 1 person_wrapped_client bd15c128-bfeb-4c60-94fa-ac546e83e834 methodName=handleMessage {{{ SOAP response: 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body>
+    <ns2:AddPersonResponse xmlns:ns2="http://template/">true</ns2:AddPersonResponse>
+  </S:Body>
+</S:Envelope>
+ }}}
+2022-10-17 22:16:49.0892 TRACE 1 person_wrapped_client 2e470704-c890-41a2-a765-8f1700ad70e9 methodName=handleMessage {{{ SOAP request: 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body>
+    <ns2:AddPersonRequest xmlns:ns2="http://template/">
+      <auth>
+        <username>user</username>
+        <password>pass</password>
+      </auth>
+      <person id="1">
+        <first-name>Jane</first-name>
+        <last-name>Doe</last-name>
+        <age>21</age>
+      </person>
+    </ns2:AddPersonRequest>
+  </S:Body>
+</S:Envelope>
+ }}}
+2022-10-17 22:16:49.0931 TRACE 1 person_wrapped_client 69a8c7b4-dd57-47ca-8d06-01d4f03c6ab5 methodName=handleMessage {{{ SOAP response: 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body>
+    <S:Fault xmlns:ns3="http://www.w3.org/2003/05/soap-envelope">
+      <faultcode>S:Server</faultcode>
+      <faultstring>Person already exists in database</faultstring>
+      <detail>
+        <ns2:PersonAlreadyExists xmlns:ns2="http://template/">
+          <message>Person already exists in database</message>
+        </ns2:PersonAlreadyExists>
+      </detail>
+    </S:Fault>
+  </S:Body>
+</S:Envelope>
+ }}}
+2022-10-17 22:16:49.0934 ERROR 1 person_wrapped_client 69a8c7b4-dd57-47ca-8d06-01d4f03c6ab5 methodName=addPerson {{{ Person already exists in database }}}
+2022-10-17 22:16:49.0943 TRACE 1 person_wrapped_client 4c943580-4379-4496-83c6-83383fdffeb3 methodName=handleMessage {{{ SOAP request: 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body>
+    <ns2:UpdatePersonRequest xmlns:ns2="http://template/">
+      <auth>
+        <username>user</username>
+        <password>pass</password>
+      </auth>
+      <person id="11">
+        <first-name>Jane</first-name>
+        <last-name>Doe</last-name>
+        <age>21</age>
+      </person>
+    </ns2:UpdatePersonRequest>
+  </S:Body>
+</S:Envelope>
+ }}}
+2022-10-17 22:16:50.0040 TRACE 1 person_wrapped_client a2ca186f-87d4-443a-a64d-e57b2176f18c methodName=handleMessage {{{ SOAP response: 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body>
+    <ns2:UpdatePersonResponse xmlns:ns2="http://template/">true</ns2:UpdatePersonResponse>
+  </S:Body>
+</S:Envelope>
+ }}}
+2022-10-17 22:16:50.0049 TRACE 1 person_wrapped_client af02c999-e165-4213-a134-ce0388d0ce07 methodName=handleMessage {{{ SOAP request: 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body>
+    <ns2:UpdatePersonRequest xmlns:ns2="http://template/">
+      <auth>
+        <username>user</username>
+        <password>pass</password>
+      </auth>
+      <person id="0">
+        <first-name>Jane</first-name>
+        <last-name>Doe</last-name>
+        <age>21</age>
+      </person>
+    </ns2:UpdatePersonRequest>
+  </S:Body>
+</S:Envelope>
+ }}}
+2022-10-17 22:16:50.0109 TRACE 1 person_wrapped_client 9b2ce2ad-f96c-408a-b837-b4eb3804e522 methodName=handleMessage {{{ SOAP response: 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body>
+    <S:Fault xmlns:ns3="http://www.w3.org/2003/05/soap-envelope">
+      <faultcode>S:Server</faultcode>
+      <faultstring>No person matches given id</faultstring>
+      <detail>
+        <ns2:PersonNotFound xmlns:ns2="http://template/">
+          <message>No person matches given id</message>
+        </ns2:PersonNotFound>
+      </detail>
+    </S:Fault>
+  </S:Body>
+</S:Envelope>
+ }}}
+2022-10-17 22:16:50.0113 ERROR 1 person_wrapped_client 9b2ce2ad-f96c-408a-b837-b4eb3804e522 methodName=updatePerson {{{ No person matches given id }}}
+2022-10-17 22:16:50.0121 TRACE 1 person_wrapped_client 02cf501d-d34f-4f59-8207-958662262891 methodName=handleMessage {{{ SOAP request: 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body>
+    <ns2:DeletePersonRequest xmlns:ns2="http://template/">
+      <auth>
+        <username>user</username>
+        <password>pass</password>
+      </auth>
+      <id>11</id>
+    </ns2:DeletePersonRequest>
+  </S:Body>
+</S:Envelope>
+ }}}
+2022-10-17 22:16:50.0250 TRACE 1 person_wrapped_client 101a4d89-fdfb-40a3-8462-4291c45fdaff methodName=handleMessage {{{ SOAP response: 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body>
+    <ns2:DeletePersonResponse xmlns:ns2="http://template/">true</ns2:DeletePersonResponse>
+  </S:Body>
+</S:Envelope>
+ }}}
+2022-10-17 22:16:50.0258 TRACE 1 person_wrapped_client 62759135-04eb-40ce-ba48-2a2f30e567b9 methodName=handleMessage {{{ SOAP request: 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body>
+    <ns2:DeletePersonRequest xmlns:ns2="http://template/">
+      <auth>
+        <username>user</username>
+        <password>pass</password>
+      </auth>
+      <id>0</id>
+    </ns2:DeletePersonRequest>
+  </S:Body>
+</S:Envelope>
+ }}}
+2022-10-17 22:16:50.0296 TRACE 1 person_wrapped_client f7ff994a-2166-4dca-b9e8-867dabbd154f methodName=handleMessage {{{ SOAP response: 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body>
+    <S:Fault xmlns:ns3="http://www.w3.org/2003/05/soap-envelope">
+      <faultcode>S:Server</faultcode>
+      <faultstring>No person with id 0 found in database</faultstring>
+      <detail>
+        <ns2:PersonNotFound xmlns:ns2="http://template/">
+          <message>No person with id 0 found in database</message>
+        </ns2:PersonNotFound>
+      </detail>
+    </S:Fault>
+  </S:Body>
+</S:Envelope>
+ }}}
+2022-10-17 22:16:50.0300 ERROR 1 person_wrapped_client f7ff994a-2166-4dca-b9e8-867dabbd154f methodName=deletePerson {{{ No person with id 0 found in database }}}
+2022-10-17 22:16:50.0307 TRACE 1 person_wrapped_client 88407074-6ba2-4771-a634-321165278094 methodName=handleMessage {{{ SOAP request: 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body>
+    <ns2:ListPersons xmlns:ns2="http://template/">
+      <auth>
+        <username>user</username>
+        <password>pass</password>
+      </auth>
+    </ns2:ListPersons>
+  </S:Body>
+</S:Envelope>
+ }}}
+2022-10-17 22:16:50.0415 TRACE 1 person_wrapped_client b76978aa-5111-4719-a28c-92cbead91467 methodName=handleMessage {{{ SOAP response: 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header/>
+  <S:Body>
+    <ns2:ListPersonsResponse xmlns:ns2="http://template/">
+      <persons>
+        <person id="1">
+          <first-name>Peter</first-name>
+          <last-name>Parker</last-name>
+          <age>24</age>
+        </person>
+        <person id="2">
+          <first-name>Miles</first-name>
+          <last-name>Morales</last-name>
+          <age>17</age>
+        </person>
+        <person id="3">
+          <first-name>Martin</first-name>
+          <last-name>Li</last-name>
+          <age>40</age>
+        </person>
+        <person id="4">
+          <first-name>Wilson</first-name>
+          <last-name>Fisk</last-name>
+          <age>48</age>
+        </person>
+        <person id="5">
+          <first-name>Otto</first-name>
+          <last-name>Octavius</last-name>
+          <age>63</age>
+        </person>
+        <person id="6">
+          <first-name>Nathan</first-name>
+          <last-name>Drake</last-name>
+          <age>38</age>
+        </person>
+        <person id="7">
+          <first-name>Mae</first-name>
+          <last-name>Borowski</last-name>
+          <age>20</age>
+        </person>
+        <person id="8">
+          <first-name>Edith</first-name>
+          <last-name>Finch</last-name>
+          <age>17</age>
+        </person>
+        <person id="9">
+          <first-name>Leon</first-name>
+          <last-name>Kennedy</last-name>
+          <age>21</age>
+        </person>
+        <person id="10">
+          <first-name>Hank</first-name>
+          <last-name>Anderson</last-name>
+          <age>53</age>
+        </person>
+      </persons>
+    </ns2:ListPersonsResponse>
+  </S:Body>
+</S:Envelope>
+ }}}

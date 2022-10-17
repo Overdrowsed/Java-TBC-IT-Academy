@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (https://github.com/eclipse-ee4j/metro-jax-ws). RI's version is JAX-WS RI 2.3.5 git-revision#7ddc91f. --><xs:schema xmlns:tns="http://template/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://template/">
+
+<xs:element name="AccessForbidden" type="tns:AccessForbidden"/>
+
+<xs:element name="AddPerson" type="tns:AddPerson"/>
+
+<xs:element name="AddPersonResponse" type="tns:AddPersonResponse"/>
+
+<xs:element name="DeletePerson" type="tns:DeletePerson"/>
+
+<xs:element name="DeletePersonResponse" type="tns:DeletePersonResponse"/>
+
+<xs:element name="GeneralError" type="tns:GeneralError"/>
+
+<xs:element name="GetPerson" type="tns:GetPerson"/>
+
+<xs:element name="GetPersonResponse" type="tns:GetPersonResponse"/>
+
+<xs:element name="ListPersons" type="tns:ListPersons"/>
+
+<xs:element name="ListPersonsResponse" type="tns:ListPersonsResponse"/>
+
+<xs:element name="PersonAlreadyExists" type="tns:PersonAlreadyExists"/>
+
+<xs:element name="PersonNotFound" type="tns:PersonNotFound"/>
+
+<xs:element name="UpdatePerson" type="tns:UpdatePerson"/>
+
+<xs:element name="UpdatePersonResponse" type="tns:UpdatePersonResponse"/>
+
+<xs:element name="person" type="tns:person"/>
+
+<xs:element name="persons">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="person" type="tns:person" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:complexType name="DeletePerson">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DeletePersonResponse">
+<xs:sequence>
+<xs:element name="DeletePersonResult" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GeneralError">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AccessForbidden">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="PersonNotFound">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GetPerson">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GetPersonResponse">
+<xs:sequence>
+<xs:element name="person" type="tns:person" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="person">
+<xs:sequence>
+<xs:element name="first-name" type="xs:string"/>
+<xs:element name="last-name" type="xs:string"/>
+<xs:element name="age" type="xs:int"/>
+</xs:sequence>
+<xs:attribute name="id" type="xs:string" use="required"/>
+</xs:complexType>
+
+<xs:complexType name="ListPersons">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="ListPersonsResponse">
+<xs:sequence>
+<xs:element name="ListPersonsResult" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AddPerson">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="first-name" type="xs:string" minOccurs="0"/>
+<xs:element name="last-name" type="xs:string" minOccurs="0"/>
+<xs:element name="age" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AddPersonResponse">
+<xs:sequence>
+<xs:element name="AddPersonResult" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="PersonAlreadyExists">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="UpdatePerson">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="first-name" type="xs:string" minOccurs="0"/>
+<xs:element name="last-name" type="xs:string" minOccurs="0"/>
+<xs:element name="age" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="UpdatePersonResponse">
+<xs:sequence>
+<xs:element name="UpdatePersonResult" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
