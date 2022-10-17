@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info" strict="true"
+           xmlns="http://logging.apache.org/log4j/2.0/config"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://logging.apache.org/log4j/2.0/config 
+           https://raw.githubusercontent.com/apache/logging-log4j2/master/log4j-core/src/main/resources/Log4j-config.xsd">
+    <Properties>
+        <Property name="logPath">logs/</Property>
+        <Property name="logPattern">
+            %date{yyyy-MM-dd HH:mm:ss.SSSS} %level %threadId %logger %X{uuid} methodName=%X{method} {{{ %message }}}%n
+        </Property>
+    </Properties>
+
+    <Appenders>
+        <RollingFile name="appender_trace" fileName="${logPath}/client_trace.log" 
+        filePattern="${logPath}/client_trace.log.%date{yyyy-MM-dd}" append="false">
+            <PatternLayout pattern="${logPattern}"/>
+            <ThresholdFilter level="trace"/>
+            <TimeBasedTriggeringPolicy/>
+        </RollingFile>
+
+        <RollingFile name="appender_error" fileName="${logPath}/client_error.log" 
+        filePattern="${logPath}/client_error.log.%date{yyyy-MM-dd}" append="false">
+            <PatternLayout pattern="${logPattern}"/>
+            <ThresholdFilter level="error"/>
+            <TimeBasedTriggeringPolicy/>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Logger name="person_wrapped_client" level="trace" additivity="false">
+            <AppenderRef ref="appender_trace"/>
+            <AppenderRef ref="appender_error"/>
+        </Logger>
+    </Loggers>
+</Configuration>

@@ -1,0 +1,4 @@
+2022-10-17 22:11:52.0790 ERROR 1 person_wrapped_client b43b1555-136f-4801-82a2-47e5f3f3af9f methodName=getPerson {{{ No person found with id 0 }}}
+2022-10-17 22:11:53.0031 ERROR 1 person_wrapped_client e091fcfc-038e-4b01-a2ab-ba78e42c271f methodName=addPerson {{{ Person already exists in database }}}
+2022-10-17 22:11:53.0261 ERROR 1 person_wrapped_client 2f20b000-98e1-4c9b-8d42-124048949108 methodName=updatePerson {{{ No person matches given id }}}
+2022-10-17 22:11:53.0545 ERROR 1 person_wrapped_client b50d7531-ea67-459e-a667-d0b494c3ba66 methodName=deletePerson {{{ No person with id 0 found in database }}}
