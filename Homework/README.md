@@ -30,7 +30,7 @@ XIV – Scanners & Console
 
 XV – Regex, String, Properties
 
-## XVI–... – Advanced Java
+## XVI–XXXX – Advanced Java
 XVI – Generics Pt1
 
 XVII – Generics Pt2
