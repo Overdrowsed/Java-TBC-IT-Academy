@@ -78,3 +78,5 @@ XXXVII – Wildfly
 XXXVIII – Rest
 
 XXXIX – Soap
+
+XXXX – Soap Client
