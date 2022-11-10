@@ -1,0 +1,1 @@
+ij clear_database_b.sql
