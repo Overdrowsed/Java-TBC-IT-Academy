@@ -1,0 +1,6 @@
+ge\ufc\project\main\App.class
+ge\ufc\project\client\Client.class
+ge\ufc\project\beans\Payment.class
+ge\ufc\project\beans\User.class
+ge\ufc\project\util\JsonUtil.class
+ge\ufc\project\util\Pair.class
