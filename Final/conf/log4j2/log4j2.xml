@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="error">
+    <Properties>
+        <Property name="service_A_logPath">${sys:catalina.home}/logs/service_A/</Property>
+        <Property name="service_B_logPath">${sys:catalina.home}/logs/service_B/</Property>
+        <Property name="logPattern">
+            %date{yyyy-MM-dd HH:mm:ss.SSSS} %level %threadId %logger %X{uuid} methodName=%X{method} {{{ %message }}}%n
+        </Property>
+    </Properties>
+
+    <Appenders>
+        <RollingFile name="service_A_trace" fileName="${service_A_logPath}/service_A_trace.log" 
+        filePattern="${service_A_logPath}/service_A_trace.log.%date{yyyy-MM-dd}">
+            <ThresholdFilter level="trace"/>
+            <PatternLayout pattern="${logPattern}"/>
+            <TimeBasedTriggeringPolicy/>
+        </RollingFile>
+
+        <RollingFile name="service_A_info" fileName="${service_A_logPath}/service_A_info.log" 
+        filePattern="${service_A_logPath}/service_A_info.log.%date{yyyy-MM-dd}">
+            <ThresholdFilter level="info"/>
+            <PatternLayout pattern="${logPattern}"/>
+            <TimeBasedTriggeringPolicy/>
+        </RollingFile>
+
+        <RollingFile name="service_A_error" fileName="${service_A_logPath}/service_A_error.log" 
+        filePattern="${service_A_logPath}/service_A_error.log.%date{yyyy-MM-dd}">
+            <ThresholdFilter level="error"/>
+            <PatternLayout pattern="${logPattern}"/>
+            <TimeBasedTriggeringPolicy/>
+        </RollingFile>
+
+        <RollingFile name="service_B_trace" fileName="${service_B_logPath}/service_B_trace.log" 
+        filePattern="${service_B_logPath}/service_B_trace.log.%date{yyyy-MM-dd}">
+            <ThresholdFilter level="trace"/>
+            <PatternLayout pattern="${logPattern}"/>
+            <TimeBasedTriggeringPolicy/>
+        </RollingFile>
+
+        <RollingFile name="service_B_info" fileName="${service_B_logPath}/service_B_info.log" 
+        filePattern="${service_B_logPath}/service_B_info.log.%date{yyyy-MM-dd}">
+            <ThresholdFilter level="info"/>
+            <PatternLayout pattern="${logPattern}"/>
+            <TimeBasedTriggeringPolicy/>
+        </RollingFile>
+
+        <RollingFile name="service_B_error" fileName="${service_B_logPath}/service_B_error.log" 
+        filePattern="${service_B_logPath}/service_B_error.log.%date{yyyy-MM-dd}">
+            <ThresholdFilter level="error"/>
+            <PatternLayout pattern="${logPattern}"/>
+            <TimeBasedTriggeringPolicy/>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Logger name="service_A" level="trace" additivity="false">
+            <AppenderRef ref="service_A_trace"/>
+            <AppenderRef ref="service_A_info"/>
+            <AppenderRef ref="service_A_error"/>
+        </Logger>
+
+        <Logger name="service_B" level="trace" additivity="false">
+            <AppenderRef ref="service_B_trace"/>
+            <AppenderRef ref="service_B_info"/>
+            <AppenderRef ref="service_B_error"/>
+        </Logger>
+    </Loggers>
+</Configuration>
