@@ -65,9 +65,9 @@ XXXI – Java 10 & 11
 
 XXXII – Maven
 
-XXXIII – Tomcat Json
+XXXIII – Servlet Json
 
-XXXIV – Tomcat Xml
+XXXIV – Servlet Xml
 
 XXXV – Http Client
 
